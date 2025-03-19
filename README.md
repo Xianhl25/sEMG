@@ -7,6 +7,27 @@ sEMG Data Procession
 
 🔗：[Trigno Wireless Biofeedback System User's Guide](https://delsys.com/downloads/USERSGUIDE/trigno/wireless-biofeedback-system.pdf)
 
+1. Connect the `Delsys base` to the `NI USB 6218` with DC-A22
+2. Connect the `USB` of the  `Delsys base` to computer
+3. Open the `Delsys Control Utility` software and click `Start Analog Output`
+4. Open `Cortex` and connect to device
+
+ :warning:ATTENTION:
+
+* Analog output of Delsys only have original EMG data, do not have acceleration or gyro data
+* About the wire connection:
+
+| COM  | Channel | EMG NO | COM  | Channel | EMG NO |
+| ---- | ------- | ------ | ---- | ------- | ------ |
+| 47   | CH17    | 1      | 53   | CH20    | 7      |
+| 48   | CH25    | 2      | 54   | CH28    | 8      |
+| 49   | CH18    | 3      | 56   | CH21    | 9      |
+| 50   | CH26    | 4      | 57   | CH29    | 9      |
+| 51   | CH19    | 5      | 58   | CH22    | 10     |
+| 52   | CH27    | 6      | 59   | CH30    | 11     |
+
+
+
 ## EMG Analysis
 
 How to analysis EMG data with EMGworks?
@@ -39,3 +60,7 @@ How to conduct activation timing analysis with Delsys EMGworks Analysis?
 * `originalDataProcession`：处理由Delsys Analysis导出的一个步态周期内肌电均值数据的脚本；
 
 * `plotEMG`：绘制肌电以及误差带图；
+
+## Author
+
+* Haolan Xian
