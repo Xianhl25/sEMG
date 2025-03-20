@@ -57,10 +57,14 @@ How to conduct activation timing analysis with Delsys EMGworks Analysis?
 
 ## scripts
 
-* `originalDataProcession`：处理由Delsys Analysis导出的一个步态周期内肌电均值数据的脚本；
+* `anc2csv.py`: 处理导出的`.anc`文件并转换成`.csv`文件
 
-* `plotEMG`：绘制肌电以及误差带图；
+* `originalDataProcession.py`：处理由Delsys Analysis导出的一个步态周期内肌电均值数据的脚本；
+
+* `plotEMG.py`：绘制肌电以及误差带图；
 
 ## Author
 
 * Haolan Xian
+* Wenbin Zhuang
+* Changjiang Lei
