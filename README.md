@@ -1,7 +1,9 @@
 # sEMG
 sEMG Data Procession
 
-## How to sync with motion capture system
+## Data Collection
+
+### How to sync with motion capture system
 
 🔗：[delsys-vicon-nexus.pdf](https://delsyseurope.com/downloads/TUTORIAL/delsys-vicon-nexus.pdf)
 
@@ -26,15 +28,38 @@ sEMG Data Procession
 | 51   | CH19    | 5      | 58   | CH22    | 10     |
 | 52   | CH27    | 6      | 59   | CH30    | 11     |
 
+### Experiment Protocol
+
+* Speeds (m/s): 0.8 / 1.0 / 1.2 / 1.4 / 1.6
+* Weight (%Body Weight): 0 / 10 / 20 / 30
+* Slope (degree): 0 / 5 / 10 / 15
+* Muscles: Rectus Femoris (RF), Vastus Lateralis (VASL), Vastus Medialis (VASM), Biceps Femoris short head (BFsh), Biceps Femoris long head (BFlh), Gastrocnemius Lateral head (GASL),  Gastrocnemius Medial head (GASM), Soleus (SOL), Tibialis Anterior (TA)
+
+## Data Procession
+
+### EMG Procession
+
+### Motion Capture Procession
+
+Process the `.c3d` files with `Visual3D` software.
+
+🔗: [Visual 3D Tutorial 101   Intro](https://www.youtube.com/watch?v=RTXD2vgWR10&list=PLg8n9IH7BYaD2-F2I0umGHoK8fdfbmgCs)
+
+### Export to OpenSim
+
+🔗: [OpenSim [HAS-Motion Software Documentation\]](https://wiki.has-motion.com/doku.php?id=visual3d:documentation:kinematics_and_kinetics:opensim)
 
 
-## EMG Analysis
+
+## Data Analysis
+
+### EMG Analysis
 
 How to analysis EMG data with EMGworks?
 
 🔗：[EMGworks Analysis: Getting Started](https://www.youtube.com/watch?v=qgowNLHLN0U)
 
-### Timing Analysis
+#### Timing Analysis
 
 🔗：[Electromyography (EMG) Analysis: Timing Analysis](https://www.youtube.com/watch?v=QAqmVzTOCG0)
 
@@ -44,24 +69,19 @@ How to conduct activation timing analysis with Delsys EMGworks Analysis?
 
 `EMG Threshold`
 
-### Amplitude Analysis
+#### Amplitude Analysis
 
 🔗：[Electromyography (EMG) Analysis: Amplitude Analysis](https://www.youtube.com/watch?v=4j_U7vPP2as)
 
-## Experiment Protocol
+* 
 
-* Speeds (m/s): 0.8 / 1.0 / 1.2 / 1.4 / 1.6
-* Weight (%Body Weight): 0 / 10 / 20 / 30
-* Slope (degree): 0 / 5 / 10 / 15
-* Muscles: Rectus Femoris (RF), Vastus Lateralis (VASL), Vastus Medialis (VASM), Biceps Femoris short head (BFsh), Biceps Femoris long head (BFlh), Gastrocnemius Lateral head (GASL),  Gastrocnemius Medial head (GASM), Soleus (SOL), Tibialis Anterior (TA)
-
-## scripts
+## Scripts Notes
 
 * `anc2csv.py`: 处理导出的`.anc`文件并转换成`.csv`文件
 
-* `originalDataProcession.py`：处理由Delsys Analysis导出的一个步态周期内肌电均值数据的脚本；
+* `originalDataProcession.py`：处理由Delsys Analysis导出的一个步态周期内肌电均值数据的脚本
 
-* `plotEMG.py`：绘制肌电以及误差带图；
+* `plotEMG.py`：绘制肌电以及误差带图
 
 ## Author
 
